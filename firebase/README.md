@@ -5,9 +5,9 @@ A web app that can accept a GitHub username and send them an invitation to join 
 You can deploy it with firebase and provide users with the frontend, in which they can enter their GitHub username and get invited to your GitHub organization.
 
 ## To contribute
-Fork the repo 
-create another branch
-push your update to the branch 
+Fork the repo,
+create another branch,
+push your update to the branch and
 send a PR
 
 ## On Firebase
