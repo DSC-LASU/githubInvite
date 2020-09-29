@@ -4,6 +4,12 @@ A web app that can accept a GitHub username and send them an invitation to join 
 
 You can deploy it with firebase and provide users with the frontend, in which they can enter their GitHub username and get invited to your GitHub organization.
 
+## To contribute
+Fork the repo 
+create another branch
+push your update to the branch 
+send a PR
+
 ## On Firebase
 Firebase is a backend as a service from Google that combines authentication, database, file storage, machine learning, analytics and cloud functions in one place, so that you concentrate on building the app. Checkout https://firebase.google.com for more information. 
 
@@ -33,3 +39,8 @@ Feel free to customize the frontend to suit your brand's guidelines. However, av
 ## Demo
 
 ![Demo of Firebase Version of GitHub Organization Invitation](../demos/node-monolith.gif)
+
+
+## Editing the Frontend
+If you want to edit the views it is located in firebase/public folder. the index.html file is the file name.
+
