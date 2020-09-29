@@ -1,60 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Invite yourself to DSC LASU on GitHub</title>
-  </head>
-  <body>
-    <noscript>
-      <h2 id="noscript-heading" class="failure">
-        This website requires JavaScript to successfully invite you to the
-        GitHub Organisation. To get invited, enable JavaScript in your browser
-        settings or upgrade or change your browser.
-      </h2>
-    </noscript>
-    <main>
-      <img src="/dsclasuV.png" alt="logo" class="logo" />
-      <!-- <img src="/dsclasuH.png" alt="logo" class="logo" /> -->
-      <h1 class="text-center">
-       JOIN DSC LASU ON GITHUB
-      </h1>
-      <p class="text-center" id="intro">
-        Enter your GitHub Username below to get invited to
-        <span class="org">the</span> GitHub Organisation
-      </p>
 
-      <p>Don't have a GitHub account? <span><a href="https://github.com/join" target="_blank" rel="noopener noreferrer">JOIN HERE</a></span></p>
-      <br>
-      <hr>
-      <br>
-      <br>
-      <form method="POST" id="invite">
-        <label>
-          <input
-            type="text"
-            name="username"
-            minlength="2"
-            placeholder="Username"
-            required
-          />
-          <span>Username</span>
-        </label>
-        <div id="button-container">
-          <button type="submit">Get Invited</button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+  <title>Invite yourself to DSC LASU on GitHub</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: 'Google Sans';
+      src: url(/fonts/GoogleSans-Regular-v1.27.ttf);
+      font-weight: normal;
+    }
+
+    @font-face {
+      font-family: 'Google Sans';
+      src: url(/fonts/GoogleSans-Bold-v1.27.ttf);
+      font-weight: bold;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      background-color: #f9fcff;
+      font-family: 'Google Sans', 'Roboto', sans-serif;
+      font-size: 1.2rem;
+    }
+
+    .dsc-logo {
+      width: 300px;
+      margin: auto;
+    }
+
+    .google-blue {
+      color: #4285F4;
+    }
+
+    .google-blue-bg {
+      background-color: #4285F4;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <h2 id="noscript-heading" class="failure">
+      This website requires JavaScript to successfully invite you to the
+      GitHub Organisation. To get invited, enable JavaScript in your browser
+      settings or upgrade or change your browser.
+    </h2>
+  </noscript>
+
+
+
+  <main>
+    <div class="inner-content  border md: w-3/5  w-11/12  m-auto  shadow-xs  rounded-lg  p-5  py-8  mt-10  space-y-4">
+      <div class="content-header  text-center  space-y-4  text-xl  text-gray-700">
+        <div class="logo">
+          <img src="dsclasuV.png" alt="Logo" class="dsc-logo" />
         </div>
-      </form>
-      <div id="message-container" class="hide">
-        <h3 class="text-center" id="message-heading"></h3>
-        <p id="message-body"></p>
+
+        <h2 class="font-bold md:text-4xl  text-3xl">
+          JOIN DSC LASU ON GITHUB
+        </h2>
+        <p class=" text-gray-700 md: text-xl  text-base md:w-4/5 lg:w-3/5  m-auto">
+          Enter your GitHub Username below to get invited to <span class="org"> GitHub
+            Organisation
+        </p>
       </div>
-    </main>
-    <script type="text/javascript" src="app.js"></script>
-  </body>
+
+      <div class="content-body md: w-3/5  w-4/5  m-auto">
+        <form class=" space-y-4" method="POST" id="invite">
+          <div class="form-group">
+            <input type="text" placeholder="Enter GitHub Username"
+              class=" border  appearance-none focus: border focus: outline-none  w-full  py-3  p-2  rounded-md" />
+          </div>
+
+          <div class="form-group" id="button-container">
+            <input type="submit" value="Get Invite"
+              class=" border  appearance-none  border-none focus: outline-none  w-full  py-3  p-2  rounded-md  google-blue-bg  text-white  cursor-pointer" />
+          </div>
+
+          <div class="form-group">
+            <p class=" text-center  text-sm">
+              Don't Have a GitHub Account? <a href="https://github.com/join" target="_blank" rel="noopener noreferrer"
+                class="google-blue  font-bold  underline">Join Here</a>
+            </p>
+          </div>
+
+          <div class="form-group mt-32">
+            <p class=" text-center  font-bold  text-gray-600">
+              DSC LASU 2020
+            </p>
+          </div>
+        </form>
+
+
+        <div id="message-container" class="hide">
+          <h3 class="text-center" id="message-heading"></h3>
+          <p id="message-body"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
 </html>

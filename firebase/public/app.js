@@ -1,7 +1,7 @@
 // get the DOM objects
 const inviteForm = document.querySelector('#invite');
 const inputUsername = document.querySelector("input[type='text']");
-const submitButton = document.querySelector("button[type='submit']");
+const submitButton = document.querySelector("input[type='submit']");
 const messageContainer = document.querySelector('#message-container');
 const messageHeading = document.querySelector('#message-heading');
 const messageBody = document.querySelector('#message-body');
